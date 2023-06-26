@@ -1,13 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+
+// navigation
+import NavigationStack from './src/navigations/NavigationStack';
+
+// Login
+import LoginForm from './src/components/LoginForm';
+
+// saludo
+import Saludar from './src/components/Saludar';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <NavigationStack/>
+    </NavigationContainer>
   );
 }
 
