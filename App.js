@@ -1,21 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 // navigation
-import NavigationStack from './src/navigations/NavigationStack';
 import NavigationTab from './src/navigations/NavigationTab';
+import NavigationStack from './src/navigations/NavigationStack';
 import NavigationDrawer from './src/navigations/NavigationDrawer';
-
-// Login
-import LoginForm from './src/components/LoginForm';
 
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <NavigationStack/> */}
-      <NavigationTab />
-      {/* <NavigationDrawer /> */}
+      <NavigationTab/>
     </NavigationContainer>
   );
 }

@@ -1,13 +1,13 @@
-import { View, Text, TextInput, Button } from 'react-native'
+import { Text, TextInput, Button, SafeAreaView  } from 'react-native'
 import React from 'react'
 
 export default function LoginForm() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>LoginForm</Text>
       <TextInput placeholder='Email' />
       <TextInput placeholder='Constraseña'/>
       <Button title='Enviar' />
-    </View>
+    </SafeAreaView>
   )
 }
